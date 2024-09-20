@@ -1,8 +1,8 @@
-package courses.Java_PRO;
+package courses.Java_PRO.task_1;
 
-import courses.Java_PRO.annotation.AfterSuite;
-import courses.Java_PRO.annotation.BeforeSuite;
-import courses.Java_PRO.annotation.Test;
+import courses.Java_PRO.task_1.annotation.AfterSuite;
+import courses.Java_PRO.task_1.annotation.BeforeSuite;
+import courses.Java_PRO.task_1.annotation.Test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

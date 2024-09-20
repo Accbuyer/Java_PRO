@@ -1,4 +1,4 @@
-package courses.Java_PRO.annotation;
+package courses.Java_PRO.task_1.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
