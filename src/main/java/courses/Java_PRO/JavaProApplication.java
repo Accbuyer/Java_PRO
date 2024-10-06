@@ -18,8 +18,25 @@ public class JavaProApplication {
 //        CollectionService collectionService = new CollectionService();
 //        collectionService.run();
 
-        ThreadPool threadPool = new ThreadPool(3);
 
+//        LinkedList<Runnable> tasks = new LinkedList<>();
+//        for (int i = 0; i < 4; i++) {
+//
+//            tasks.add(new Runnable() {
+//                @Override
+//                public void run() {
+//
+//                    for (int j = 0; j < 5; j++) {
+//
+//                        System.out.println(j);
+//                    }
+//                }
+//            });
+//        }
+//        MyThreadPool threadPool = new MyThreadPool(3, tasks);
+
+        ThreadPool threadPool = new ThreadPool(3);
+        
         for (int i = 0; i < 10; i++) {
             int taskNum = i;
             threadPool.execute(() -> {
