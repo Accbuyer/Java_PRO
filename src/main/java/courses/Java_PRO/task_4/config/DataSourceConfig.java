@@ -4,12 +4,14 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
 
 import javax.sql.DataSource;
 
+@Profile("task4")
 @Configuration
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:application.yaml")
 public class DataSourceConfig {
 
     @Value("${spring.datasource.url}")
@@ -23,6 +25,7 @@ public class DataSourceConfig {
 
 
     @Bean
+
     public DataSource dataSource() {
 
         HikariConfig config = new HikariConfig();
