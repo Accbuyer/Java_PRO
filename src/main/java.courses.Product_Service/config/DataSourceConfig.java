@@ -1,4 +1,4 @@
-package courses.Java_PRO.task_5.config;
+package src.main.java.courses.Product_Service.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 @Configuration
-@ConfigurationProperties(prefix = "spring.datasource")
+@ConfigurationProperties("spring.datasource")
 @Getter
 @Setter
 public class DataSourceConfig {
