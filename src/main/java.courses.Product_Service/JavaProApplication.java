@@ -1,5 +1,4 @@
-package courses.Java_PRO;
-
+package src.main.java.courses.Product_Service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
